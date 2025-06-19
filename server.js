@@ -17,6 +17,13 @@ app.get('/status', (req, res)=>{
     })
 })
 
+
+app.get('/usuarios', (req, res)=>{
+    res.json({
+        message: "Lista de usuarios"
+    })
+})
+
 app.listen(PORT, () => {
     console.log('Server is running on port ', PORT)
 })
