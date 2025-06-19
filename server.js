@@ -17,6 +17,13 @@ app.get('/status', (req, res)=>{
     })
 })
 
+
+app.get('/productos', (req, res)=>{
+    res.json({
+        message: "Lista de productos"
+    })
+})
+
 app.listen(PORT, () => {
     console.log('Server is running on port ', PORT)
 })
