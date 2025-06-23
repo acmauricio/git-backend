@@ -5,15 +5,15 @@ const PORT = process.env.PORT || 3000;
 
 app.get('/hello', (req, res)=>{
     res.json({
-        message: 'Hola Mundo'
+        message: 'Hola desde Node.js'
     })
 })
 
-message = `SERVICE IS RUNNING ON PORT ${PORT}`
+message = `SERVICE RUNNING`
 
 app.get('/status', (req, res)=>{
     res.json({
-        message: message
+        status: message
     })
 })
 
