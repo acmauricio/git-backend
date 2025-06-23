@@ -5,11 +5,11 @@ const PORT = process.env.PORT || 3000;
 
 app.get('/hello', (req, res)=>{
     res.json({
-        message: 'Hola Mundo'
+        message: 'Hola Mundo a todos'
     })
 })
 
-message = `SERVICE IS RUNNING ON PORT ${PORT}`
+message = `EL SERVICIO ESTA CORRIENDO EN EL PUERTO ${PORT}`
 
 app.get('/status', (req, res)=>{
     res.json({
