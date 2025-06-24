@@ -3,17 +3,25 @@ const app = express();
 require('dotenv').config();
 const PORT = process.env.PORT || 3000;
 
-app.get('/hello', (req, res)=>{
+app.get('/saludo', (req, res)=>{
     res.json({
-        message: 'Hola Mundo'
+        message: 'Hola desde Node.js'
     })
 })
 
-message = `SERVICE IS RUNNING ON PORT ${PORT}`
+
+message = `EL SERVICIO ESTA CORRIENDO EN EL PUERTO ${PORT}`
 
 app.get('/status', (req, res)=>{
     res.json({
-        message: message
+        status: message
+    })
+})
+
+
+app.get('/usuarios', (req, res)=>{
+    res.json({
+        message: "Lista de usuarios"
     })
 })
 
