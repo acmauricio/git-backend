@@ -9,11 +9,19 @@ app.get('/saludo', (req, res)=>{
     })
 })
 
-message = `SERVICE RUNNING`
+
+message = `EL SERVICIO ESTA CORRIENDO EN EL PUERTO ${PORT}`
 
 app.get('/status', (req, res)=>{
     res.json({
         status: message
+    })
+})
+
+
+app.get('/usuarios', (req, res)=>{
+    res.json({
+        message: "Lista de usuarios"
     })
 })
 
